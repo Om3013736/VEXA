@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>VEXA Fashion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🛍️ VEXA Fashion</h1>
+    <nav>
+      <a href="#">الرئيسية</a>
+      <a href="#">المنتجات</a>
+      <a href="#">السلة</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products">
+      <div class="item">
+        <img src="https://via.placeholder.com/150" alt="تيشيرت">
+        <h3>تيشيرت VEXA</h3>
+        <p>السعر: 250 جنيه</p>
+        <button onclick="addToCart('تيشيرت VEXA', 250)">أضف للسلة</button>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/150" alt="بنطلون">
+        <h3>بنطلون VEXA</h3>
+        <p>السعر: 400 جنيه</p>
+        <button onclick="addToCart('بنطلون VEXA', 400)">أضف للسلة</button>
+      </div>
+    </section>
+
+    <section class="cart">
+      <h2>🛒 السلة</h2>
+      <ul id="cart-items"></ul>
+      <p id="total">الإجمالي: 0 جنيه</p>
+      <button onclick="checkout()">الدفع الآن</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 VEXA Fashion - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
