@@ -2,35 +2,42 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>متجر VEXA</title>
+  <title>VEXA Store</title>
+  <!-- ربط ملف التنسيقات -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>🛍️ متجر VEXA</h1>
+    <h1>متجر VEXA</h1>
     <nav>
-      <a href="index.html">الرئيسية</a>
-      <a href="products.html">المنتجات</a>
-      <a href="cart.html">السلة</a>
+      <a href="#">الرئيسية</a>
+      <a href="#">المنتجات</a>
+      <a href="#">عنّا</a>
     </nav>
   </header>
 
   <main>
+    <!-- المنتجات -->
     <section class="products">
-      <h2>المنتجات</h2>
+      <h2>🛍️ المنتجات</h2>
       <div class="product">
-        <h3>تيشيرت VEXA</h3>
-        <p>سعر: 200 جنيه</p>
-        <button onclick="addToCart('تيشيرت VEXA', 200)">أضف للسلة</button>
+        <h3>تيشيرت عصري</h3>
+        <p>السعر: 150 جنيه</p>
+        <button onclick="addToCart('تيشيرت عصري', 150)">أضف للسلة</button>
       </div>
       <div class="product">
-        <h3>كاب VEXA</h3>
-        <p>سعر: 150 جنيه</p>
-        <button onclick="addToCart('كاب VEXA', 150)">أضف للسلة</button>
+        <h3>حذاء رياضي</h3>
+        <p>السعر: 300 جنيه</p>
+        <button onclick="addToCart('حذاء رياضي', 300)">أضف للسلة</button>
+      </div>
+      <div class="product">
+        <h3>ساعة أنيقة</h3>
+        <p>السعر: 500 جنيه</p>
+        <button onclick="addToCart('ساعة أنيقة', 500)">أضف للسلة</button>
       </div>
     </section>
 
+    <!-- السلة والدفع -->
     <section class="cart">
       <h2>🛒 السلة</h2>
       <ul id="cart-items"></ul>
@@ -45,13 +52,31 @@
       <button onclick="payPayPal()">PayPal</button>
       <button onclick="payApplePay()">Apple Pay</button>
       <button onclick="payGooglePay()">Google Pay</button>
+      <!-- زر لتفريغ السلة -->
+      <button onclick="clearCart()">🗑️ تفريغ السلة</button>
+    </section>
+
+    <!-- وصف المتجر -->
+    <section class="about">
+      <h2>مرحبًا بك في VEXA</h2>
+      <p>
+        <strong>VEXA</strong> مش مجرد متجر إلكتروني، ده عالم مليان بالأناقة والابتكار.
+        هنا هتلاقي منتجات عصرية بجودة عالية وأسعار مناسبة، مع تجربة تسوّق سهلة وسريعة.
+      </p>
+      <p>
+        🛍️ تنوع في المنتجات، 💳 طرق دفع آمنة، 🛒 سلة ذكية، وخدمة عملاء دايمًا جنبك.
+      </p>
+      <p>
+        هدفنا إنك تستمتع بكل لحظة في رحلتك معانا، من أول ما تختار المنتج لحد ما يوصل لباب بيتك.
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 متجر VEXA - جميع الحقوق محفوظة</p>
+    <p>© 2026 VEXA Store - جميع الحقوق محفوظة</p>
   </footer>
 
+  <!-- ربط ملف الجافاسكريبت -->
   <script src="script.js"></script>
 </body>
 </html>
