@@ -2,32 +2,32 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>VEXA Fashion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>متجر VEXA</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>🛍️ VEXA Fashion</h1>
+    <h1>🛍️ متجر VEXA</h1>
     <nav>
-      <a href="#">الرئيسية</a>
-      <a href="#">المنتجات</a>
-      <a href="#">السلة</a>
+      <a href="index.html">الرئيسية</a>
+      <a href="products.html">المنتجات</a>
+      <a href="cart.html">السلة</a>
     </nav>
   </header>
 
   <main>
     <section class="products">
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="تيشيرت">
+      <h2>المنتجات</h2>
+      <div class="product">
         <h3>تيشيرت VEXA</h3>
-        <p>السعر: 250 جنيه</p>
-        <button onclick="addToCart('تيشيرت VEXA', 250)">أضف للسلة</button>
+        <p>سعر: 200 جنيه</p>
+        <button onclick="addToCart('تيشيرت VEXA', 200)">أضف للسلة</button>
       </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="بنطلون">
-        <h3>بنطلون VEXA</h3>
-        <p>السعر: 400 جنيه</p>
-        <button onclick="addToCart('بنطلون VEXA', 400)">أضف للسلة</button>
+      <div class="product">
+        <h3>كاب VEXA</h3>
+        <p>سعر: 150 جنيه</p>
+        <button onclick="addToCart('كاب VEXA', 150)">أضف للسلة</button>
       </div>
     </section>
 
@@ -35,14 +35,24 @@
       <h2>🛒 السلة</h2>
       <ul id="cart-items"></ul>
       <p id="total">الإجمالي: 0 جنيه</p>
-      <button onclick="checkout()">الدفع الآن</button>
+
+      <h3>اختر طريقة الدفع:</h3>
+      <button onclick="payVisa()">فيزا</button>
+      <button onclick="payVodafoneCash()">فودافون كاش</button>
+      <button onclick="payOrangeCash()">أورانج كاش</button>
+      <button onclick="payEtisalatCash()">اتصالات كاش</button>
+      <button onclick="payCOD()">الدفع عند الاستلام</button>
+      <button onclick="payPayPal()">PayPal</button>
+      <button onclick="payApplePay()">Apple Pay</button>
+      <button onclick="payGooglePay()">Google Pay</button>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 VEXA Fashion - جميع الحقوق محفوظة</p>
+    <p>© 2026 متجر VEXA - جميع الحقوق محفوظة</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+      
